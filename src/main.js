@@ -26,11 +26,11 @@ router.map({
   }
 })
 // why? https://prerender.io/documentation/best-practices
-router.beforeEach(function (transition) {
-  window.document.title = transition.to.title || 'Default page title'
+router.beforeEach(function () {
   window.prerenderReady = false
 })
 router.afterEach(function (transition) {
+  window.document.title = transition.to.title || 'Default page title'
   window.prerenderReady = true
 })
 

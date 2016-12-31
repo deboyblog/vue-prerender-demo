@@ -9,10 +9,8 @@
       return {}
     },
     ready () {
-      console.log('ddd')
       this.$http.get('title.json').then((res) => {
-        console.log(res)
-        window.document.title = res.data
+        window.document.title = res.data.data
       })
     }
   }
