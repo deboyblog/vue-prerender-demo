@@ -19,7 +19,7 @@ router.map({
     title: '这个页面的标题是从路由定义中的',
     component: require('./views/TitleFromRouterDefine.vue')
   },
-  contentFromRouterDefine: {
+  contentFromBackendResponse: {
     name: 'contentFromBackendResponse',
     title: '这个网页的内容是异步获取的',
     component: require('./views/ContentFromBackendResponse.vue')
