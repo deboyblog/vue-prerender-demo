@@ -6,9 +6,11 @@ import VueResource from 'vue-resource'
 Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.http.options.root = 'static/api'
-var router = new VueRouter()
+var router = new VueRouter({
+  history: true,
+  hashbang: false
+})
 Vue.http.options.emulateJSON = true
-// 这里组件不要用异步加载的
 router.map({
   titleFromBackendResponse: {
     name: 'titleFromBackendResponse',
