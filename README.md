@@ -2,6 +2,7 @@
 
 > A Vue.js project
 
+## [详细教程](https://www.deboy.cn/prerender-vuejs1-X-SEO-best-practice.html)
 ## Build Setup
 
 ``` bash
